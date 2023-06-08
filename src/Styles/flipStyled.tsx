@@ -12,9 +12,9 @@ export const Button = styled.button`
 
 export const FlipCard = styled.div`
   background-color: transparent;
-  max-width: 410px;
+  max-width: 430px;
   max-height: 410px;
-  width: 410px;
+  width: 430px;
   height: 410px;
   perspective: 1000px;
   margin-bottom: 3rem;
@@ -103,7 +103,30 @@ export const Group = styled.div`
   }
 
 `
-
+export const Select = styled.button`
+    padding: 8px 45px;
+    border-radius: 8px;
+    background-color: #64b816;
+    box-shadow: 1px 1px 9px 0 rgba(5, 24, 24, 0.26);
+    color: #fff;
+    font-size: 16px;
+    line-height: 24px;
+    border-bottom: 5px solid #2b5008;
+    border-right: 5px solid #2b5008;
+    transition: 0.5s;
+    
+    :active{
+      border:none;
+    }
+`
+export const Image = styled.img`
+    display: inline-block;
+    max-width: 100%;
+    width: 108px;
+    margin-bottom: 21px;
+    -webkit-filter: saturate(0%);
+    filter: saturate(0%);
+`
 export const Buttons = styled.button`
   appearance: none;
   backdrop-filter: blur(12px) saturate(180%);
