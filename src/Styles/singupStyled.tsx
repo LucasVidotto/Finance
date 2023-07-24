@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
-export const Container = styled.div`    display:flex;
+export const Container = styled.div`
+    display:flex;
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -29,42 +30,43 @@ export const Container = styled.div`    display:flex;
         width: 70%;
         max-height: 400px;
         height: 400px;
-    }  `
+    }  
+`
 
 export const Left = styled.div`
-display: flex;
-flex-direction: column;
-align-items: center;
-width: 100%;
-border: 2px solid #f0f0f0;
-border-radius: 8px;
-background-color: rgba(97, 95, 95, 0.678);
-& > div:first-child{
-display: flex;
-width: 100%;
-margin-bottom: 1rem;
-}
-& > div:nth-child(2) > div{
-display: flex;
-width: 100%;
-justify-content: center;
-align-items: center;
-margin-bottom: 2rem;
-font-size: 21px;
-color:#bbb9b9;
-font-family: Brush Script MT, Brush Script Std, cursive;
-font-weight: 800;
-}
-& > div:nth-child(2) >div > span{
-display: flex;
-margin-left: 1rem;
-font-size: 14px;
-color:#7e7d7d;
-font-family: Brush Script MT, Brush Script Std, cursive;
-font-weight: 800;
-}
-& > button{
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    border: 2px solid #f0f0f0;
+    border-radius: 8px 0 0 8px;
+    background-color: rgba(97, 95, 95, 0.678);
+    & > div:first-child{
+        display: flex;
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    & > div:nth-child(2) > div{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 2rem;
+        font-size: 21px;
+        color:#bbb9b9;
+        font-family: Brush Script MT, Brush Script Std, cursive;
+        font-weight: 800;
+    }
+    & > div:nth-child(2) >div >  span{
+        display: flex;
+        margin-left: 1rem;
+        font-size: 14px;
+        color:#7e7d7d;
+        font-family: Brush Script MT, Brush Script Std, cursive;
+        font-weight: 800;
+    }
+    & > button{
+        
         width: 60%;
         height: 35px;
         color:#f0f0f0;
@@ -81,29 +83,38 @@ font-weight: 800;
             border:1px solid #f0f0f0;
         }
     }
-
 `
 
-export const Image = styled.img`    margin: 0;
+export const Image = styled.img`
+    margin: 0;
     width: 100px;
     height: 60px;
-    object-fit: contain;`
+    object-fit: contain;
+`
 export const Right = styled.div`
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-width: 90%;
-border: 2px solid black;
-background-color: white;
-border-radius: 8px;
-& > span{
-margin-bottom: 1rem;
-}
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    border: 2px solid black;
+    background-color: white;
+    border-radius: 8px;
+    & > span{
+        margin-bottom: 1rem;
+    }
 
+    & > span{
+        font-size: 24px;
+        font-weight: 900;
+        color:#7e7d7d;
+        text-shadow: 3px 3px 2px #535252;
+    }
+       
 `
 
-export const BTN = styled.div`    display: flex;
+export const BTN = styled.div`
+    display: flex;
     align-items: center;
     justify-content: center;
     min-width: 100%;
@@ -123,24 +134,25 @@ export const BTN = styled.div`    display: flex;
             height: 33px;
             border:1px solid #f0f0f0;
         }
-    }`
+    }
+`
 
 export const Inputs = styled.div`
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-width: 100%;
-& > div{
-display: flex;
-justify-content: center;
-align-items: center;
-margin-bottom: 1.3rem;
-width: 46%;
-height: 35px;
-background-color: #6e6d70;
-border: 1px solid rgb(12, 12, 12);
-border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+       & > div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 1.3rem;
+        width: 46%;
+        height: 35px;
+        background-color: #6e6d70;
+        border: 1px solid rgb(12, 12, 12);
+        border-radius: 8px;
 
         & > input{
             width: 75%;
@@ -155,43 +167,42 @@ border-radius: 8px;
             }
         }
     }
-
 `
 export const AcessRedes = styled.div`
-display: flex;
-width: 100%;
-flex-direction: column;
-justify-content: center;
-align-items: center;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
     &> div:first-child{
         margin: 1rem 0;
     }
-
 `
 
-export const Redes = styled.div`    width: 100%;
+export const Redes = styled.div`
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap:1.5rem;`
+    gap:1.5rem;
+`
 
 export const Border = styled.div`
-display: flex;
-justify-content: center;
-align-items: center;
-max-width: 35px;
-height: 32px;
-width: 32px;
-background-color: transparent;
-border-radius: 50%;
-border: solid 1px rgba(131, 128, 128, 0.685);
-cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 35px;
+    height: 32px;
+    width: 32px;
+    background-color: transparent;
+    border-radius: 50%;
+    border: solid 1px rgba(131, 128, 128, 0.685);
+    cursor: pointer;
 
     :hover{
         background-color: rgba(131, 128, 128, 0.35);
         border: solid 1px rgba(131, 128, 128, 1);
     }
-
 `
